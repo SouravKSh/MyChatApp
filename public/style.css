@@ -1,0 +1,116 @@
+body{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:100%;
+    width:100%;
+}
+.chat-container{
+    width: 80%;
+    height: 450px;
+}
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    background-color: rgb(209, 185, 231);
+    padding: 10px;
+    overflow-y: scroll;
+}
+.single-msg{
+    margin-top: 10px;
+    display:block;
+    flex-direction: column;
+    border-radius: 5px;
+    padding:10px;
+    width: fit-content;
+    max-width: 80%;
+    min-width: 20%;
+    height: fit-content;
+}
+.incoming{
+    float:left;
+    background-color: #FFE59D;
+}
+.outgoing{
+    float:right;
+    margin-left: auto;
+    background-color: #F8ECD1;
+}
+h4{
+    font-size: medium;
+    margin-top: 0;
+    margin-bottom:0;
+}
+p{
+    font-size: 10px;
+    margin-bottom:2px;
+    margin-top:0;
+}
+.input-field{
+    width: 100%;
+    display: flex;
+}
+#text{
+    width:90%;
+    padding: 2px 10px;
+    height: 30px;
+}
+#button{
+    width:10%;
+    border: none;
+    background-color: #5B4B8A;
+    color: white;
+    cursor: pointer;
+}
+.pjoin{
+    font-size: 12px;
+}
+.joined{
+    margin: 5px auto;
+    background-color:#371B58;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Customized Scroll bar */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(137, 137, 241) rgb(151, 241, 211);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(253, 139, 183);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(151, 241, 211);
+    border-radius: 20px;
+    border: 3px solid rgb(137, 137, 241);
+  }
+
+  @media only screen and (max-width: 555px)  {
+    #text{
+        width:85%;
+    }
+    #button{
+        width:15%;
+        text-align: center;
+    }
+    .chat-container{
+        width:100%;
+    }
+  }

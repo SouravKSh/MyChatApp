@@ -1,0 +1,10 @@
+appendJoin(username);
+
+function appendJoin(name){
+    const joinDiv = document.createElement("div");
+    joinDiv.innerHTML =  `
+    <p>${name}</p>
+    `;  
+    joinDiv.classList.add("joined"); 
+    addMsg.appendChild(joinDiv);
+}
